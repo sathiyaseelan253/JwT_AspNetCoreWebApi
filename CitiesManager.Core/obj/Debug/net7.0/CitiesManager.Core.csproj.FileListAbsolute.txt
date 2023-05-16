@@ -1,0 +1,12 @@
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\bin\Debug\net7.0\CitiesManager.Core.deps.json
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\bin\Debug\net7.0\CitiesManager.Core.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\bin\Debug\net7.0\CitiesManager.Core.pdb
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\CitiesManager.Core.csproj.AssemblyReference.cache
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\CitiesManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\CitiesManager.Core.AssemblyInfoInputs.cache
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\CitiesManager.Core.AssemblyInfo.cs
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\CitiesManager.Core.csproj.CoreCompileInputs.cache
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\CitiesManager.Core.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\refint\CitiesManager.Core.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\CitiesManager.Core.pdb
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.Core\obj\Debug\net7.0\ref\CitiesManager.Core.dll
