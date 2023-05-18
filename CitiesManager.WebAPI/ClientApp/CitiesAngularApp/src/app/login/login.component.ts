@@ -44,6 +44,8 @@ export class LoginComponent {
         error: (error) => {
           // console.log(error);
           this.loginFailed = true;
+          alert('Error occured in logging in user');
+          
         },
 
         complete: () => { },

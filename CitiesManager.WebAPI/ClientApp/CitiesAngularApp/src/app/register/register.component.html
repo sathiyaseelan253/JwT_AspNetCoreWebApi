@@ -55,6 +55,8 @@
         <div class="flex-1">
           <input type="password" id="password" class="form-input" formControlName="password" />
           <span class="text-red" *ngIf="(register_passwordControl.touched || isRegisterFormSubmitted) && (register_passwordControl.errors?.['required'])">Password can't be blank</span>
+          <span class="text-red" *ngIf="(register_passwordControl.touched || isRegisterFormSubmitted) && (register_passwordControl.errors?.['minlength'])">Password should be minimum 5 characters length</span>
+
         </div>
       </div>
 
@@ -68,11 +70,56 @@
         <div class="flex-1">
           <input type="password" id="confirmPassword" class="form-input" formControlName="confirmPassword" />
           <span class="text-red" *ngIf="(register_confirmPasswordControl.touched || isRegisterFormSubmitted) && (register_confirmPasswordControl.errors?.['required'])">Confirm Password can't be blank</span>
-
           <span class="text-red" *ngIf="(register_confirmPasswordControl.touched || isRegisterFormSubmitted) && (register_confirmPasswordControl.errors?.['compareValidator'])">Password and confirm password do not match</span>
         </div>
       </div>
 
+        <!-- DateOfBirth -->
+        <div class="form-field flex">
+          <div class="w-25">
+            <label for="dateOfBirth" class="form-label pt">Date of Birth</label>
+          </div>
+  
+          <div class="flex-1">
+            <input type="date" id="dateOfBirth" class="form-input" formControlName="dateOfBirth" />
+            <span class="text-red" *ngIf="(register_dateOfBirthControl.touched || isRegisterFormSubmitted) && (register_dateOfBirthControl.errors?.['required'])">Date of birth can't be blank</span>
+  
+            <span class="text-red" *ngIf="(register_dateOfBirthControl.touched || isRegisterFormSubmitted) && (register_dateOfBirthControl.errors?.['DateOfBirth'])">{{ register_dateOfBirthControl.errors?.['DateOfBirth'][0]}}</span>
+          </div>
+        </div>
+
+         <!-- Current salary -->
+         <div class="form-field flex">
+          <div class="w-25">
+            <label for="currentSalary" class="form-label pt">Current Salary</label>
+          </div>
+  
+          <div class="flex-1">
+            <input type="number" id="currentSalary" class="form-input" formControlName="currentSalary" />
+            <span class="text-red" *ngIf="(register_currentSalaryControl.touched || isRegisterFormSubmitted) && (register_currentSalaryControl.errors?.['required'])">Current Salary can't be blank</span>
+  
+            <!-- <span class="text-red" *ngIf="(register_currentSalaryControl.touched || isRegisterFormSubmitted) && (register_currentSalaryControl.errors?.['SalaryRangeValidator'])">{{ register_currentSalaryControl.errors?.['SalaryRangeValidator']}}</span> -->
+          </div>
+        </div>
+
+         <!-- Expected Salary -->
+         <div class="form-field flex">
+          <div class="w-25">
+            <label for="expectedSalary" class="form-label pt">Expected Salary</label>
+          </div>
+  
+          <div class="flex-1">
+            <input type="number" id="expectedSalary" class="form-input" formControlName="expectedSalary" />
+            <span class="text-red" *ngIf="(register_expectedSalaryControl.touched || isRegisterFormSubmitted) && (register_expectedSalaryControl.errors?.['required'])">Expected Salary can't be blank</span>
+  
+            <span class="text-red" *ngIf="(register_expectedSalaryControl.touched || isRegisterFormSubmitted) && (register_expectedSalaryControl.errors?.['ExpectedSalary'])">{{ register_dateOfBirthControl.errors?.['ExpectedSalary'][0]}}</span>
+          </div>
+        </div>
+        <div *ngIf="errorMessages.length>0">
+          <ul>
+            <li style="color:red;" *ngFor="let error of errorMessages">{{error}}</li>
+          </ul>
+        </div>
 
       <!-- submit -->
       <div class="form-field flex">

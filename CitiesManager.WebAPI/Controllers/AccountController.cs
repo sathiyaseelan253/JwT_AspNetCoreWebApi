@@ -19,18 +19,20 @@ namespace CitiesManager.WebAPI.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<ApplicationRole> _roleManager;
         private readonly IJwtService _jwtService;
+        private readonly ILogger<AccountController> _logger;
         /// <summary>
         /// Login constructor
         /// </summary>
         /// <param name="userManager"></param>
         /// <param name="signInManager"></param>
         /// <param name="roleManager"></param>
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<ApplicationRole> roleManager, IJwtService jwtService)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<ApplicationRole> roleManager, IJwtService jwtService, ILogger<AccountController> logger)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
             _jwtService = jwtService;
+            _logger = logger;
         }
         /// <summary>
         /// Register user
@@ -40,6 +42,7 @@ namespace CitiesManager.WebAPI.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<ApplicationUser>> PostRegister(RegisterDTO registerDTO)
         {
+            _logger.LogInformation("Reached PostRegister action");
             if (ModelState.IsValid == false)
             {
                 string errorMessage = string.Join(" | ", ModelState.Values.SelectMany(error => error.Errors).Select(e => e.ErrorMessage));
@@ -59,11 +62,15 @@ namespace CitiesManager.WebAPI.Controllers
                 //Sign-in the created user
                await _signInManager.SignInAsync(applicationUser, isPersistent:false);
                AuthenticationResponse authenticationResponse = _jwtService.CreateJWTToken(applicationUser);
+                _logger.LogInformation("JWT Token created successfully");
+
                 return Ok(authenticationResponse);
             }
             else
             {
                 string errorMessage = string.Join(" | ", identityResult.Errors.Select(e => e.Description));
+                _logger.LogInformation("Error occurred while login");
+
                 return Problem(errorMessage);
             }
         }
@@ -78,10 +85,12 @@ namespace CitiesManager.WebAPI.Controllers
             ApplicationUser? user = await _userManager.FindByEmailAsync(email);
             if(user == null)
             {
+                _logger.LogInformation("Email is not used");
                 return Ok(true);
             }
             else
             {
+                _logger.LogInformation("Email is in use");
                 return Ok(false);
             }
         }
@@ -93,6 +102,7 @@ namespace CitiesManager.WebAPI.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<ApplicationUser>> PostLogin(LoginDTO loginDTO)
         {
+            _logger.LogInformation("Reached PostLogin method");
             if (ModelState.IsValid == false)
             {
                 string errorMessage = string.Join(" | ", ModelState.Values.SelectMany(errors => errors.Errors).Select(e => e.ErrorMessage));
@@ -109,10 +119,13 @@ namespace CitiesManager.WebAPI.Controllers
                         return NoContent();
                     }
                     var authenticationResponse = _jwtService.CreateJWTToken(user);
+                    _logger.LogInformation("JWT token produced successfully");
+
                     return Ok(authenticationResponse);
                 }
                 else
                 {
+                    _logger.LogInformation("JLogin failed due to incorrect credential");
                     return Problem("Invalid email or password!");
                 }
             }
@@ -124,6 +137,7 @@ namespace CitiesManager.WebAPI.Controllers
         [HttpGet("logout")]
         public async Task<IActionResult> GetLogout()
         {
+            _logger.LogInformation("Reached logout method");
             await _signInManager.SignOutAsync();
             return NoContent();
         }

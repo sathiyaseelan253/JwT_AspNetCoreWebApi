@@ -296,3 +296,16 @@ D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\obj\Debug\net
 D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\obj\Debug\net7.0\CitiesManager.WebAPI.genruntimeconfig.cache
 D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\obj\Debug\net7.0\ref\CitiesManager.WebAPI.dll
 D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.AspNetCore.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Sinks.MSSqlServer.dll
+D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\bin\Debug\net7.0\Serilog.Sinks.PeriodicBatching.dll

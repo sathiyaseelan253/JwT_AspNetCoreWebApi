@@ -1,0 +1,119 @@
+2023-05-17 19:35:23.601 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-17 19:35:24.515 +05:30 [INF] Now listening on: https://localhost:7221
+2023-05-17 19:35:24.517 +05:30 [INF] Now listening on: http://localhost:5063
+2023-05-17 19:35:24.521 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-17 19:35:24.522 +05:30 [INF] Hosting environment: Development
+2023-05-17 19:35:24.523 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-05-17 19:35:32.917 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-05-17 19:35:33.809 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 893.4452ms
+2023-05-17 19:35:37.152 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-05-17 19:35:37.153 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-05-17 19:35:37.170 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 16.9872ms
+2023-05-17 19:35:37.257 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 104.3247ms
+2023-05-17 19:35:37.353 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-05-17 19:35:38.552 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1198.7942ms
+2023-05-17 19:36:46.511 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-05-17 19:36:46.589 +05:30 [INF] CORS policy execution successful.
+2023-05-17 19:36:46.593 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 82.5310ms
+2023-05-17 19:36:46.607 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 61
+2023-05-17 19:36:46.620 +05:30 [INF] CORS policy execution successful.
+2023-05-17 19:36:47.084 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-05-17 19:36:47.133 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-05-17 19:36:48.298 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 61
+2023-05-17 19:36:48.301 +05:30 [INF] CORS policy execution successful.
+2023-05-17 19:36:48.302 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-05-17 19:36:48.329 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-05-17 19:36:48.768 +05:30 [INF] Reached PostLogin method
+2023-05-17 19:36:48.770 +05:30 [INF] Reached PostLogin method
+2023-05-17 19:37:01.784 +05:30 [INF] Executed DbCommand (175ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-05-17 19:37:01.784 +05:30 [INF] Executed DbCommand (175ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-05-17 19:37:02.599 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-05-17 19:37:02.601 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-05-17 19:37:02.668 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-05-17 19:37:02.668 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-05-17 19:37:02.702 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-05-17 19:37:02.702 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-05-17 19:37:14.013 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-05-17 19:37:18.987 +05:30 [INF] CORS policy execution successful.
+2023-05-17 19:37:19.782 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 5769.6510ms
+2023-05-17 19:37:19.787 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 61
+2023-05-17 19:37:19.789 +05:30 [INF] CORS policy execution successful.
+2023-05-17 19:37:19.792 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-05-17 19:37:19.795 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-05-17 19:37:19.796 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-17 19:37:19.881 +05:30 [INF] Executed DbCommand (90ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-17 19:37:20.558 +05:30 [INF] Reached PostLogin method
+2023-05-17 19:37:24.532 +05:30 [INF] Executed DbCommand (68ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-05-17 19:37:26.807 +05:30 [INF] JWT token produced successfully
+2023-05-17 19:37:26.807 +05:30 [INF] Executed DbCommand (60ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-05-17 19:37:26.808 +05:30 [INF] JWT token produced successfully
+2023-05-17 19:37:29.852 +05:30 [INF] Executed DbCommand (209ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-05-17 19:37:30.115 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-05-17 19:37:30.135 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-05-17 19:37:30.135 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-05-17 19:37:31.913 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-05-17 19:37:31.975 +05:30 [INF] JWT token produced successfully
+2023-05-17 19:37:31.978 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-05-17 19:37:35.917 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 47576.4818ms
+2023-05-17 19:37:35.917 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 48772.3156ms
+2023-05-17 19:37:35.917 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 16111.2456ms
+2023-05-17 19:37:35.923 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-05-17 19:37:35.923 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-05-17 19:37:35.925 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-05-17 19:37:35.944 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 61 - 200 - application/json;+charset=utf-8 47645.1161ms
+2023-05-17 19:37:35.944 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 61 - 200 - application/json;+charset=utf-8 16156.9533ms
+2023-05-17 19:37:35.944 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 61 - 200 - application/json;+charset=utf-8 49336.3307ms
+2023-05-17 19:37:36.092 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-05-17 19:37:36.093 +05:30 [INF] CORS policy execution successful.
+2023-05-17 19:37:36.095 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 2.2824ms
+2023-05-17 19:37:36.099 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-05-17 19:37:36.105 +05:30 [INF] CORS policy execution successful.
+2023-05-17 19:37:36.209 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-05-17 19:37:36.221 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-05-17 19:37:36.245 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-05-17 19:37:36.269 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-17 19:37:36.294 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 70.9581ms
+2023-05-17 19:37:36.297 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-05-17 19:37:36.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 199.6444ms
