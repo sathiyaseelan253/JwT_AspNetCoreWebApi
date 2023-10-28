@@ -73,6 +73,7 @@ export class RegisterComponent {
           this.isRegisterFormSubmitted = false;
           this.accountService.currentUserName = response.email;
           localStorage["token"] = response.token;
+          localStorage["refreshToken"] = response.refreshToken;
           this.router.navigate(['/cities']);
           this.registerForm.reset();
         },

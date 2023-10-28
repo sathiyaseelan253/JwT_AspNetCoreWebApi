@@ -38,4 +38,5 @@ export class CitiesService {
     headers = headers.append("Authorization", `Bearer ${localStorage['token']}`);
     return this.httpClient.delete<string>(`${API_BASE_URL}/${cityID}`, { headers: headers })
   }
+ 
 }

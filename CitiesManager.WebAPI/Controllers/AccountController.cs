@@ -4,6 +4,8 @@ using CitiesManager.Core.ServiceContracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.InteropServices;
+using System.Security.Claims;
 
 namespace CitiesManager.WebAPI.Controllers
 {
@@ -63,7 +65,9 @@ namespace CitiesManager.WebAPI.Controllers
                await _signInManager.SignInAsync(applicationUser, isPersistent:false);
                AuthenticationResponse authenticationResponse = _jwtService.CreateJWTToken(applicationUser);
                 _logger.LogInformation("JWT Token created successfully");
-
+                applicationUser.RefreshToken = authenticationResponse.RefreshToken;
+                applicationUser.RefreshTokenExpirationDatatime = authenticationResponse.RefreshTokenExpirationDatatime;
+                await _userManager.UpdateAsync(applicationUser);
                 return Ok(authenticationResponse);
             }
             else
@@ -113,14 +117,16 @@ namespace CitiesManager.WebAPI.Controllers
                var result = await _signInManager.PasswordSignInAsync(loginDTO.Email, loginDTO.Password, isPersistent: false, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    var user = await _userManager.FindByEmailAsync(loginDTO.Email);
-                    if(user == null)
+                    var applicationUser = await _userManager.FindByEmailAsync(loginDTO.Email);
+                    if(applicationUser == null)
                     {
                         return NoContent();
                     }
-                    var authenticationResponse = _jwtService.CreateJWTToken(user);
+                    var authenticationResponse = _jwtService.CreateJWTToken(applicationUser);
                     _logger.LogInformation("JWT token produced successfully");
-
+                    applicationUser.RefreshToken = authenticationResponse.RefreshToken;
+                    applicationUser.RefreshTokenExpirationDatatime = authenticationResponse.RefreshTokenExpirationDatatime;
+                    await _userManager.UpdateAsync(applicationUser);
                     return Ok(authenticationResponse);
                 }
                 else
@@ -140,6 +146,38 @@ namespace CitiesManager.WebAPI.Controllers
             _logger.LogInformation("Reached logout method");
             await _signInManager.SignOutAsync();
             return NoContent();
+        }
+        /// <summary>
+        /// Generate new JWT Access token, if expired using refresh token
+        /// </summary>
+        /// <param name="tokenModel"></param>
+        /// <returns></returns>
+        [HttpPost("generate-new-jwtToken")]
+        public async Task<IActionResult> GenerateNewToken(TokenModel tokenModel)
+        {
+            if (tokenModel == null)
+            {
+                return BadRequest("Invalid client request");
+            }
+
+            ClaimsPrincipal? claimsPrincipal = new ClaimsPrincipal();
+            claimsPrincipal = _jwtService.GetClaimsPrincipalJwtToken(tokenModel.Token);
+
+            if (claimsPrincipal == null)
+            {
+                return BadRequest("Invalid jwt access token");
+            }
+            string? email = claimsPrincipal.FindFirstValue(ClaimTypes.Email);
+            ApplicationUser? applicationUser = await _userManager.FindByEmailAsync(email);
+            if (applicationUser == null || applicationUser.RefreshToken != tokenModel.RefreshToken || applicationUser.RefreshTokenExpirationDatatime <= DateTime.Now)
+            {
+                return BadRequest("Invalid Refresh token");
+            }
+            var authenticationUserResponse = _jwtService.CreateJWTToken(applicationUser);
+            applicationUser.RefreshToken = authenticationUserResponse.RefreshToken;
+            applicationUser.RefreshTokenExpirationDatatime = authenticationUserResponse.RefreshTokenExpirationDatatime;
+            await _userManager.UpdateAsync(applicationUser);
+            return Ok(authenticationUserResponse);
         }
     }
 }

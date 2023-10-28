@@ -80,10 +80,10 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\E drive\\Asp Net Core\\Identity with Web API\\CitiesManager.Infrastructure\\CitiesManager.Infrastructure.csproj",
-        "projectName": "CitiesManager.Infrastructure",
+        "projectName": "CitiesManager.Core",
         "projectPath": "D:\\E drive\\Asp Net Core\\Identity with Web API\\CitiesManager.Infrastructure\\CitiesManager.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\sathiyaseelan.ram\\.nuget\\packages\\",
-        "outputPath": "D:\\E drive\\Asp Net Core\\Identity with Web API\\CitiesManager.Infrastructure\\obj\\",
+        "outputPath": "D:\\E drive\\Asp Net Core\\Identity with Web API\\CitiesManager.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -102,11 +102,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "D:\\E drive\\Asp Net Core\\Identity with Web API\\CitiesManager.Core\\CitiesManager.Core.csproj": {
-                "projectPath": "D:\\E drive\\Asp Net Core\\Identity with Web API\\CitiesManager.Core\\CitiesManager.Core.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

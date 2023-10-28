@@ -5179,21 +5179,6 @@
         "runtime": {
           "bin/placeholder/CitiesManager.Core.dll": {}
         }
-      },
-      "CitiesManager.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "CitiesManager.Core": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.4",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
-        },
-        "compile": {
-          "bin/placeholder/CitiesManager.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CitiesManager.Infrastructure.dll": {}
-        }
       }
     }
   },
@@ -14152,17 +14137,11 @@
       "type": "project",
       "path": "../CitiesManager.Core/CitiesManager.Core.csproj",
       "msbuildProject": "../CitiesManager.Core/CitiesManager.Core.csproj"
-    },
-    "CitiesManager.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../CitiesManager.Infrastructure/CitiesManager.Infrastructure.csproj",
-      "msbuildProject": "../CitiesManager.Infrastructure/CitiesManager.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "CitiesManager.Core >= 1.0.0",
-      "CitiesManager.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.0",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 5.0.0",

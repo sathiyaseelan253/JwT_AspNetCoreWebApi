@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using CitiesManager.Infrastructure.DatabaseContext;
 using CitiesManager.Core.Models;
 using Microsoft.AspNetCore.Authorization;
-
+using CitiesManager.WebAPI.Filters;
 namespace CitiesManager.WebAPI.Controllers.v1
 {
     /// <summary>
@@ -27,6 +27,7 @@ namespace CitiesManager.WebAPI.Controllers.v1
         /// <returns></returns>
         [HttpGet]
         [Authorize]
+        [TypeFilter(typeof(PersonListActionFilter))]
         //[Produces("application/xml")]
         public async Task<ActionResult<IEnumerable<City>>> GetCities()
         {
@@ -126,8 +127,7 @@ namespace CitiesManager.WebAPI.Controllers.v1
 
             return NoContent(); //HTTP 200
         }
-
-
+      
         private bool CityExists(Guid id)
         {
             return (_context.Cities?.Any(e => e.CityID == id)).GetValueOrDefault();

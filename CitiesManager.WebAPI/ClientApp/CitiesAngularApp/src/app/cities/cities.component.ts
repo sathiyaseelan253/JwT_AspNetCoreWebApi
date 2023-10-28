@@ -3,6 +3,7 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { City } from '../models/city';
 import { CitiesService } from '../services/cities.service';
 import { Router } from '@angular/router';
+import { AccountService } from '../services/account.service';
 
 @Component({
   selector: 'app-cities',
@@ -17,7 +18,7 @@ export class CitiesComponent {
   putCityForm: FormGroup;
   editCityID: string | null = null;
 
-  constructor(private citiesService: CitiesService, private router:Router) {
+  constructor(private citiesService: CitiesService, private router:Router, private accoutService:AccountService) {
     if(localStorage['token']== null || localStorage['token']== undefined || localStorage['token']== ''){
       alert("Please login/register to view the requested pages");
       this.router.navigate(['/login']);
@@ -145,5 +146,22 @@ export class CitiesComponent {
         complete: () => { },
       })
     }
+  }
+  RefreshClicked(): void {
+    this.accoutService.postGenerateJwtToken().subscribe({
+      next: (response: any) => {
+        localStorage["token"] = response.token;
+        localStorage["refreshToken"] = response.refreshToken;
+        this.loadCities();
+      },
+      error: (error: any) => {
+        console.log("Error:" + error);
+        alert("Session Expired.... please login to continue");
+        this.router.navigate(['/login']);
+      },
+      complete: () => {
+        console.log("Request Completed");
+      }
+      })
   }
 }

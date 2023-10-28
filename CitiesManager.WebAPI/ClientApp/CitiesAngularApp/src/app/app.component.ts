@@ -18,6 +18,7 @@ export class AppComponent {
       next: (res) => {
         this.accountService.currentUserName = null;
         localStorage.removeItem('token');
+        localStorage.removeItem('refreshToken');
         this.router.navigate(['/login']);
       },
         error: (err) => {

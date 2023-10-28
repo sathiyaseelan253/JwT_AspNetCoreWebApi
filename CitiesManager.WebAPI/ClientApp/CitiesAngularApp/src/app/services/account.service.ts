@@ -21,4 +21,9 @@ export class AccountService {
   public getLogOutLogin(): Observable<string> {
     return this.http.get<string>(`${api_base_url}logout`);
   }
+  public postGenerateJwtToken(): Observable<any> {
+    let token: string = localStorage["token"];
+    let refreshToken: string = localStorage["refreshToken"];
+    return this.http.post<any>(`${api_base_url}generate-new-jwtToken`, { token: token, refreshToken: refreshToken });
+  }
 }

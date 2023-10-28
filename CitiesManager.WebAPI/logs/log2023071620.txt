@@ -1,0 +1,808 @@
+2023-07-16 20:16:01.755 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 20:16:01.970 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 20:16:01.971 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 20:16:01.973 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 20:16:01.973 +05:30 [INF] Hosting environment: Development
+2023-07-16 20:16:01.974 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 20:16:03.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 20:16:04.174 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 461.4449ms
+2023-07-16 20:16:04.190 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 20:16:04.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 20:16:04.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 88.8038ms
+2023-07-16 20:16:04.409 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 219.0521ms
+2023-07-16 20:16:04.682 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 20:16:05.023 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 342.0961ms
+2023-07-16 20:16:46.205 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 20:16:46.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 20.6900ms
+2023-07-16 20:16:46.250 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 20:16:46.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 20:16:46.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 14.4869ms
+2023-07-16 20:16:46.289 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.4865ms
+2023-07-16 20:16:46.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 20:16:46.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.3310ms
+2023-07-16 20:17:34.429 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:17:34.455 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:17:34.457 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 28.2212ms
+2023-07-16 20:17:34.458 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 667
+2023-07-16 20:17:34.464 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:17:34.503 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:17:34.527 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:17:38.028 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 3496.3477ms
+2023-07-16 20:17:38.034 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:17:38.037 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'email')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken(TokenModel tokenModel) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 171
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-07-16 20:17:38.048 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 667 - 500 - text/plain;+charset=utf-8 3589.1198ms
+2023-07-16 20:18:12.747 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:18:12.751 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:18:12.751 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 3.9001ms
+2023-07-16 20:18:12.753 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 667
+2023-07-16 20:18:12.753 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:18:12.755 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:18:12.756 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:18:47.565 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 20:18:47.733 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 20:18:47.735 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 20:18:47.741 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 20:18:47.743 +05:30 [INF] Hosting environment: Development
+2023-07-16 20:18:47.743 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 20:18:49.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 20:18:50.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 395.8285ms
+2023-07-16 20:18:50.391 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 20:18:50.407 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 20:18:50.414 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 7.1404ms
+2023-07-16 20:18:50.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.0178ms
+2023-07-16 20:18:50.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 20:18:50.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 455.9364ms
+2023-07-16 20:18:56.451 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:18:56.477 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:18:56.478 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 26.9541ms
+2023-07-16 20:18:56.480 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 667
+2023-07-16 20:18:56.488 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:18:56.536 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:18:56.558 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:21:03.550 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 20:21:03.728 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 20:21:03.729 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 20:21:03.731 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 20:21:03.731 +05:30 [INF] Hosting environment: Development
+2023-07-16 20:21:03.732 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 20:21:06.579 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 20:21:06.992 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 398.4366ms
+2023-07-16 20:21:07.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 20:21:07.051 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 20:21:07.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 6.1481ms
+2023-07-16 20:21:07.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.3374ms
+2023-07-16 20:21:07.105 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 20:21:07.610 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 504.3993ms
+2023-07-16 20:21:18.533 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 20:21:18.561 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:21:18.564 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 30.8064ms
+2023-07-16 20:21:18.566 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:21:18.569 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:21:18.616 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:21:18.641 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:21:18.819 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:21:19.730 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:21:20.006 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:21:20.034 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:21:20.052 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:21:20.063 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:21:20.166 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:21:26.548 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:21:26.649 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:21:26.665 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:21:26.677 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 8032.2552ms
+2023-07-16 20:21:26.680 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:21:26.689 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 8123.5312ms
+2023-07-16 20:21:26.697 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:21:26.699 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:21:26.700 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 3.4949ms
+2023-07-16 20:21:26.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:21:26.703 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:21:26.754 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:21:26.759 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:21:26.818 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:21:26.825 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:21:26.832 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 71.4339ms
+2023-07-16 20:21:26.833 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:21:26.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 132.7360ms
+2023-07-16 20:21:41.425 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:21:41.426 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:21:41.427 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 2.6016ms
+2023-07-16 20:21:41.429 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817
+2023-07-16 20:21:41.430 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:21:41.431 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:21:41.436 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:21:51.725 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:21:55.593 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:21:55.607 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:21:57.712 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:21:57.713 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 16276.0408ms
+2023-07-16 20:21:57.714 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:21:57.715 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817 - 200 - application/json;+charset=utf-8 16285.2297ms
+2023-07-16 20:22:09.256 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:22:09.257 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:22:09.258 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 1.5872ms
+2023-07-16 20:22:09.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:22:09.261 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:22:09.263 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:22:09.264 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:22:09.275 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:22:09.276 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:22:09.277 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 12.2778ms
+2023-07-16 20:22:09.279 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:22:09.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 20.1178ms
+2023-07-16 20:23:48.108 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 20:23:48.462 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 20:23:48.463 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 20:23:48.466 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 20:23:48.466 +05:30 [INF] Hosting environment: Development
+2023-07-16 20:23:48.467 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 20:23:51.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 20:23:51.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 237.7589ms
+2023-07-16 20:23:51.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 20:23:51.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 20:23:51.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 187.7558ms
+2023-07-16 20:23:52.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.0960ms
+2023-07-16 20:23:53.135 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 20:23:53.485 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 350.0688ms
+2023-07-16 20:24:08.610 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 20:24:08.637 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:24:08.640 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 29.9018ms
+2023-07-16 20:24:08.641 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:24:08.645 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:24:08.698 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:24:08.718 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:24:08.903 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:24:09.815 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:24:10.082 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:24:10.118 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:24:10.139 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:24:10.156 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:24:10.283 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:24:12.685 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:24:12.779 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:24:12.799 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:24:12.815 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 4091.3413ms
+2023-07-16 20:24:12.817 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:24:12.824 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 4183.0832ms
+2023-07-16 20:24:12.843 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:24:12.845 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:24:12.846 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 2.8959ms
+2023-07-16 20:24:12.851 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:24:12.853 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:24:12.917 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:24:12.922 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:24:12.988 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:24:12.996 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:24:13.003 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 80.2074ms
+2023-07-16 20:24:13.004 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:24:13.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 154.2570ms
+2023-07-16 20:26:05.973 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:26:05.976 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:26:05.978 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 6.5640ms
+2023-07-16 20:26:05.983 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817
+2023-07-16 20:26:05.984 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:26:05.985 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:26:05.988 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:26:26.242 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:26:37.034 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-07-16 20:26:37.036 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 31047.5102ms
+2023-07-16 20:26:37.038 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:26:37.039 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817 - 400 - application/json;+charset=utf-8 31055.8161ms
+2023-07-16 20:30:55.839 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:30:55.840 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:30:55.841 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 1.3493ms
+2023-07-16 20:30:55.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:30:55.864 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:30:55.866 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:30:55.874 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:30:56.076 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:30:56.148 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:30:56.149 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:30:56.150 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:30:56.150 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:30:56.151 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:30:56.155 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 77.3001ms
+2023-07-16 20:30:56.155 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:30:56.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 0 - application/json;+charset=utf-8 312.2614ms
+2023-07-16 20:30:56.157 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:30:56.159 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:30:56.160 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 6.5746ms
+2023-07-16 20:30:56.162 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:30:56.163 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 86.4332ms
+2023-07-16 20:30:58.461 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:30:58.463 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:30:58.463 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 2.4349ms
+2023-07-16 20:30:58.466 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817
+2023-07-16 20:30:58.466 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:30:58.467 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:30:58.469 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:31:01.748 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:31:01.750 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-07-16 20:31:01.751 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 3281.6237ms
+2023-07-16 20:31:01.753 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:31:01.753 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817 - 400 - application/json;+charset=utf-8 3287.6603ms
+2023-07-16 20:31:24.214 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:31:24.219 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-07-16 20:31:24.221 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-07-16 20:31:24.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/account/generate-new-jwtToken - - - 405 0 - 8.0881ms
+2023-07-16 20:31:39.946 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 20:31:39.949 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:31:39.950 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 3.8990ms
+2023-07-16 20:31:39.951 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:31:39.953 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:31:39.954 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:31:39.954 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:31:39.955 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:31:39.961 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:31:40.052 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:31:40.058 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:31:40.061 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:31:40.064 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:31:40.066 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:31:41.804 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:31:41.815 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:31:41.817 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:31:41.818 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 1862.8934ms
+2023-07-16 20:31:41.819 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:31:41.819 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 1867.9454ms
+2023-07-16 20:31:41.836 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:31:41.836 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:31:41.837 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 1.1043ms
+2023-07-16 20:31:41.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:31:41.845 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:31:41.848 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:31:41.851 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:31:41.864 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:31:41.865 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:31:41.866 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 6.5302ms
+2023-07-16 20:31:41.867 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:31:41.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 23.0604ms
+2023-07-16 20:32:32.361 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:32:32.362 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:32:32.363 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 3.0124ms
+2023-07-16 20:32:32.368 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817
+2023-07-16 20:32:32.369 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:32:32.370 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:32:32.371 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:32:41.543 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:32:41.546 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-07-16 20:32:41.548 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 9176.6544ms
+2023-07-16 20:32:41.549 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:32:41.550 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817 - 400 - application/json;+charset=utf-8 9182.0416ms
+2023-07-16 20:33:01.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:33:01.014 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-07-16 20:33:01.016 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-07-16 20:33:01.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/account/generate-new-jwtToken - - - 405 0 - 4.8933ms
+2023-07-16 20:33:26.795 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 20:33:26.795 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:33:26.796 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 2.6509ms
+2023-07-16 20:33:26.798 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:33:26.798 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:33:26.799 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:33:26.799 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:33:26.801 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:33:26.807 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:33:26.911 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:33:26.914 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:33:26.916 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:33:26.921 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:33:26.922 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:33:29.032 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:33:29.040 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:33:29.042 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:33:29.043 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 2243.2077ms
+2023-07-16 20:33:29.048 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:33:29.049 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 2251.1670ms
+2023-07-16 20:33:40.096 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:33:40.098 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:33:40.099 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 2.9020ms
+2023-07-16 20:33:40.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:33:40.101 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:33:40.102 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:33:40.103 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:33:40.106 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:33:40.108 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:33:40.110 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 6.9304ms
+2023-07-16 20:33:40.112 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:33:40.113 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 12.2851ms
+2023-07-16 20:33:48.943 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:33:48.944 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:33:48.944 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 1.2422ms
+2023-07-16 20:33:48.946 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817
+2023-07-16 20:33:48.947 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:33:48.947 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:33:48.948 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:34:05.327 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:34:08.803 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:34:08.817 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:34:10.346 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:34:10.349 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 21400.3954ms
+2023-07-16 20:34:10.352 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:34:10.353 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817 - 200 - application/json;+charset=utf-8 21406.6169ms
+2023-07-16 20:34:15.809 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:34:15.810 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:34:15.811 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 1.4764ms
+2023-07-16 20:34:15.812 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:34:15.813 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:34:15.814 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:34:15.814 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:34:15.817 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:34:15.820 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:34:15.821 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 5.8749ms
+2023-07-16 20:34:15.822 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:34:15.823 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 10.7729ms
+2023-07-16 20:35:10.333 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:35:10.334 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:35:10.335 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 2.5718ms
+2023-07-16 20:35:10.338 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817
+2023-07-16 20:35:10.339 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:35:10.340 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:35:10.341 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:35:21.027 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:35:25.009 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-07-16 20:35:25.010 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 14667.7089ms
+2023-07-16 20:35:25.011 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:35:25.011 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817 - 400 - application/json;+charset=utf-8 14673.2095ms
+2023-07-16 20:36:43.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 20:36:43.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 16.7233ms
+2023-07-16 20:36:43.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 20:36:43.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 20:36:43.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 7.1877ms
+2023-07-16 20:36:43.550 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.2929ms
+2023-07-16 20:37:33.408 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 20:37:33.706 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 20:37:33.707 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 20:37:33.710 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 20:37:33.710 +05:30 [INF] Hosting environment: Development
+2023-07-16 20:37:33.712 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 20:37:36.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 20:37:36.685 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 202.4581ms
+2023-07-16 20:37:36.699 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 20:37:36.716 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 17.2139ms
+2023-07-16 20:37:36.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 20:37:36.793 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.4142ms
+2023-07-16 20:37:36.883 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 20:37:37.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 493.7833ms
+2023-07-16 20:38:08.779 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 20:38:08.824 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:38:08.825 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 45.8658ms
+2023-07-16 20:38:08.827 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:38:08.833 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:38:08.909 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:38:08.932 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:38:09.091 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:38:09.951 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:38:10.202 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:38:10.229 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:38:10.244 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:38:10.254 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:38:10.355 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:38:17.393 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:38:17.402 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:38:17.411 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:38:17.412 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:38:17.418 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:38:17.421 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:38:17.478 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:38:17.530 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:38:17.545 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:38:17.557 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 8619.8322ms
+2023-07-16 20:38:17.558 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:38:17.561 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:38:17.565 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:38:17.568 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 8740.4096ms
+2023-07-16 20:38:17.568 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:38:17.570 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:38:17.573 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:38:17.573 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:38:17.574 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:38:18.939 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 1366.3024ms
+2023-07-16 20:38:18.941 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:38:18.941 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:38:18.943 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:38:18.945 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:38:18.960 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyExceptionAsync(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyExceptionAsync(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-07-16 20:38:18.968 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:38:18.969 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 1556.5318ms
+2023-07-16 20:38:18.971 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:38:18.972 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 1578.8449ms
+2023-07-16 20:38:18.994 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:38:19.000 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:38:19.019 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:38:19.028 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:38:19.034 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 33.1488ms
+2023-07-16 20:38:19.035 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:38:19.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 94.4608ms
+2023-07-16 20:38:46.115 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/account/logout - -
+2023-07-16 20:38:46.116 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:38:46.117 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 20:38:46.121 +05:30 [INF] Route matched with {action = "GetLogout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLogout() on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:38:46.135 +05:30 [INF] Reached logout method
+2023-07-16 20:38:46.139 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-07-16 20:38:46.140 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-07-16 20:38:46.141 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-07-16 20:38:46.144 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-07-16 20:38:46.144 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI) in 21.8022ms
+2023-07-16 20:38:46.145 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 20:38:46.147 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/account/logout - - - 204 - - 31.6873ms
+2023-07-16 20:39:09.604 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 20:39:09.612 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:39:09.613 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 8.6999ms
+2023-07-16 20:39:09.614 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:39:09.615 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:39:09.618 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:39:09.618 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:39:09.620 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:39:09.637 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:39:09.742 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:39:09.747 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:39:09.748 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:39:09.751 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:39:09.753 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:39:11.492 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:39:11.498 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:39:11.501 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:39:11.501 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 1882.6145ms
+2023-07-16 20:39:11.503 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:39:11.504 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 1889.3948ms
+2023-07-16 20:39:11.512 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:39:11.513 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:39:11.513 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 0.9913ms
+2023-07-16 20:39:11.515 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:39:11.515 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:39:11.517 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:39:11.519 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:39:11.524 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:39:11.526 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:39:11.529 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 8.9022ms
+2023-07-16 20:39:11.531 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:39:11.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 17.3082ms
+2023-07-16 20:40:06.598 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:40:06.602 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:40:06.603 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 5.3092ms
+2023-07-16 20:40:06.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:40:06.606 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:40:06.607 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:40:06.608 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:40:06.614 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:40:06.616 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:40:06.617 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 6.9397ms
+2023-07-16 20:40:06.618 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:40:06.618 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 13.1587ms
+2023-07-16 20:40:37.800 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 20:40:37.806 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:40:37.806 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 5.6548ms
+2023-07-16 20:40:37.808 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 20:40:37.808 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:40:37.809 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:40:37.809 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:40:37.811 +05:30 [INF] Reached PostLogin method
+2023-07-16 20:40:37.815 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:40:37.907 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 20:40:37.912 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 20:40:37.913 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 20:40:37.916 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:40:37.918 +05:30 [INF] JWT token produced successfully
+2023-07-16 20:40:39.711 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 20:40:39.719 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 20:40:39.720 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 20:40:39.721 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 1911.6321ms
+2023-07-16 20:40:39.722 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 20:40:39.723 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 1915.0853ms
+2023-07-16 20:40:39.741 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 20:40:39.742 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:40:39.742 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 0.9902ms
+2023-07-16 20:40:39.744 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 20:40:39.745 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:40:39.746 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:40:39.747 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 20:40:39.754 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 20:40:39.756 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 20:40:39.757 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 9.5699ms
+2023-07-16 20:40:39.759 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 20:40:39.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 16.2697ms
+2023-07-16 20:42:24.318 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - -
+2023-07-16 20:42:24.320 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:42:24.322 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/generate-new-jwtToken - - - 204 - - 3.4163ms
+2023-07-16 20:42:24.329 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817
+2023-07-16 20:42:24.330 +05:30 [INF] CORS policy execution successful.
+2023-07-16 20:42:24.331 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:42:24.334 +05:30 [INF] Route matched with {action = "GenerateNewToken", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateNewToken(CitiesManager.Core.DTO.TokenModel) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 20:42:29.080 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 20:42:29.082 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-16 20:42:29.085 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI) in 4748.9811ms
+2023-07-16 20:42:29.087 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GenerateNewToken (CitiesManager.WebAPI)'
+2023-07-16 20:42:29.087 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/generate-new-jwtToken application/json 817 - 400 - application/json;+charset=utf-8 4758.4739ms

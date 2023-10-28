@@ -1,0 +1,1217 @@
+2023-07-16 18:00:05.531 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 18:00:05.731 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 18:00:05.736 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 18:00:05.738 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 18:00:05.738 +05:30 [INF] Hosting environment: Development
+2023-07-16 18:00:05.739 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 18:00:07.799 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 18:00:08.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 366.9159ms
+2023-07-16 18:00:08.376 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 18:00:08.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 18:00:08.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 44.2060ms
+2023-07-16 18:00:08.455 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.3076ms
+2023-07-16 18:00:09.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 18:00:09.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 253.5893ms
+2023-07-16 18:00:19.348 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/register - -
+2023-07-16 18:00:19.387 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:00:19.389 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/register - - - 204 - - 40.9443ms
+2023-07-16 18:00:19.391 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/register application/json 209
+2023-07-16 18:00:19.396 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:00:19.445 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:00:19.469 +05:30 [INF] Route matched with {action = "PostRegister", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostRegister(CitiesManager.Core.DTO.RegisterDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:00:19.655 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-07-16 18:00:19.662 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI) in 188.2253ms
+2023-07-16 18:00:19.664 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:00:19.667 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/register application/json 209 - 400 - application/json;+charset=utf-8 276.1520ms
+2023-07-16 18:00:46.631 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/register - -
+2023-07-16 18:00:46.637 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:00:46.640 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/register - - - 204 - - 8.8701ms
+2023-07-16 18:00:46.649 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/register application/json 209
+2023-07-16 18:00:46.652 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:00:46.654 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:00:46.659 +05:30 [INF] Route matched with {action = "PostRegister", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostRegister(CitiesManager.Core.DTO.RegisterDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:00:46.669 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-07-16 18:00:46.671 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI) in 10.6896ms
+2023-07-16 18:00:46.672 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:00:46.672 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/register application/json 209 - 400 - application/json;+charset=utf-8 22.9621ms
+2023-07-16 18:01:01.156 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/register - -
+2023-07-16 18:01:01.157 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:01.159 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/register - - - 204 - - 3.0142ms
+2023-07-16 18:01:01.160 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/register application/json 209
+2023-07-16 18:01:01.160 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:01.162 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:01:01.163 +05:30 [INF] Route matched with {action = "PostRegister", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostRegister(CitiesManager.Core.DTO.RegisterDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:01:01.175 +05:30 [INF] Reached PostRegister action
+2023-07-16 18:01:02.106 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:01:02.310 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PersonName], [PhoneNumber], [PhoneNumberConfirmed], [RefreshToken], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2023-07-16 18:01:02.381 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:01:02.406 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:01:02.421 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:01:02.537 +05:30 [INF] JWT Token created successfully
+2023-07-16 18:01:02.540 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:01:02.544 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI) in 1380.8506ms
+2023-07-16 18:01:02.545 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:01:02.551 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/register application/json 209 - 200 - application/json;+charset=utf-8 1391.0110ms
+2023-07-16 18:01:02.576 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:01:02.577 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:02.578 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 2.7999ms
+2023-07-16 18:01:02.582 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:01:02.585 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:02.627 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:01:02.631 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:01:02.694 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:01:02.707 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:01:02.713 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 80.9925ms
+2023-07-16 18:01:02.715 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:01:02.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 134.9893ms
+2023-07-16 18:01:32.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/account/logout - -
+2023-07-16 18:01:32.480 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:32.481 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 18:01:32.484 +05:30 [INF] Route matched with {action = "GetLogout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLogout() on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:01:32.486 +05:30 [INF] Reached logout method
+2023-07-16 18:01:32.489 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-07-16 18:01:32.491 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-07-16 18:01:32.491 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-07-16 18:01:32.494 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-07-16 18:01:32.494 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI) in 8.7806ms
+2023-07-16 18:01:32.495 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 18:01:32.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/account/logout - - - 204 - - 15.6897ms
+2023-07-16 18:01:40.148 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:01:40.149 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:40.150 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 1.7998ms
+2023-07-16 18:01:40.151 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:01:40.152 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:40.153 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:01:40.157 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:01:40.164 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:01:40.187 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:01:40.293 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:01:40.297 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:01:40.300 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:01:40.311 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 18:01:40.313 +05:30 [INF] JWT token produced successfully
+2023-07-16 18:01:40.314 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:01:40.315 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 154.5526ms
+2023-07-16 18:01:40.315 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:01:40.316 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 164.5871ms
+2023-07-16 18:01:40.323 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:01:40.324 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:40.326 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 2.7616ms
+2023-07-16 18:01:40.327 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:01:40.328 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:01:40.330 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:01:40.331 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:01:40.335 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:01:40.336 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:01:40.337 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 4.3508ms
+2023-07-16 18:01:40.337 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:01:40.338 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 10.7413ms
+2023-07-16 18:21:03.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 18:21:03.913 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 17.2795ms
+2023-07-16 18:21:03.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 18:21:03.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 18:21:03.926 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 1.5836ms
+2023-07-16 18:21:03.977 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.4263ms
+2023-07-16 18:21:04.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 18:21:04.118 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.7626ms
+2023-07-16 18:23:02.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 18:23:02.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 14.7949ms
+2023-07-16 18:23:02.792 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 18:23:02.825 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 18:23:02.827 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 2.3869ms
+2023-07-16 18:23:02.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.7211ms
+2023-07-16 18:23:03.032 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 18:23:03.040 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4033ms
+2023-07-16 18:25:13.800 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 18:25:13.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 13.7815ms
+2023-07-16 18:25:13.829 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 18:25:13.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 18:25:13.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 4.8193ms
+2023-07-16 18:25:13.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.4118ms
+2023-07-16 18:25:14.034 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 18:25:14.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.2420ms
+2023-07-16 18:33:18.871 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 18:33:19.184 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 18:33:19.185 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 18:33:19.188 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 18:33:19.188 +05:30 [INF] Hosting environment: Development
+2023-07-16 18:33:19.189 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 18:33:21.966 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 18:33:22.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 549.7695ms
+2023-07-16 18:33:24.001 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 18:33:24.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 5.3875ms
+2023-07-16 18:33:24.053 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 18:33:24.145 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.4250ms
+2023-07-16 18:33:24.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 18:33:24.743 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 474.0619ms
+2023-07-16 18:33:54.014 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:33:54.047 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:33:54.049 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 35.7779ms
+2023-07-16 18:33:54.052 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:33:54.058 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:33:54.110 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:33:54.137 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:33:54.303 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:33:55.161 +05:30 [ERR] Failed executing DbCommand (40ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:33:55.176 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:33:55.244 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 1102.7549ms
+2023-07-16 18:33:55.246 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:33:55.249 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at CitiesManager.WebAPI.Controllers.AccountController.PostLogin(LoginDTO loginDTO) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 115
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:33:55.283 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 500 - text/plain;+charset=utf-8 1230.0764ms
+2023-07-16 18:33:58.688 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:33:58.692 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:33:58.695 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:33:58.696 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:33:58.701 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:33:58.755 +05:30 [ERR] Failed executing DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:33:58.758 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:33:58.800 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 103.2064ms
+2023-07-16 18:33:58.801 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:33:58.803 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at CitiesManager.WebAPI.Controllers.AccountController.PostLogin(LoginDTO loginDTO) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 115
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:33:58.822 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 500 - text/plain;+charset=utf-8 134.3170ms
+2023-07-16 18:34:05.839 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:34:05.841 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:34:05.841 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 2.2478ms
+2023-07-16 18:34:05.843 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:34:05.844 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:34:05.847 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:34:05.848 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:34:05.860 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:34:05.873 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:34:05.876 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:34:05.915 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 66.164ms
+2023-07-16 18:34:05.916 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:34:05.917 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at CitiesManager.WebAPI.Controllers.AccountController.PostLogin(LoginDTO loginDTO) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 115
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:34:05.934 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 500 - text/plain;+charset=utf-8 90.6771ms
+2023-07-16 18:34:31.061 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:34:31.098 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:34:31.099 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 37.9804ms
+2023-07-16 18:34:31.100 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 61
+2023-07-16 18:34:31.101 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:34:31.102 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:34:31.102 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:34:31.104 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:34:31.108 +05:30 [ERR] Failed executing DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:34:31.111 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:34:31.143 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 39.4992ms
+2023-07-16 18:34:31.144 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:34:31.146 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at CitiesManager.WebAPI.Controllers.AccountController.PostLogin(LoginDTO loginDTO) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 115
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:34:31.157 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 61 - 500 - text/plain;+charset=utf-8 56.4933ms
+2023-07-16 18:34:50.692 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:34:50.693 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:34:50.693 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 1.3215ms
+2023-07-16 18:34:50.695 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 61
+2023-07-16 18:34:50.695 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:34:50.696 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:34:50.696 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:34:50.698 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:34:50.704 +05:30 [ERR] Failed executing DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:34:50.707 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:34:50.750 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 52.4462ms
+2023-07-16 18:34:50.751 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:34:50.752 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at CitiesManager.WebAPI.Controllers.AccountController.PostLogin(LoginDTO loginDTO) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 115
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:34:50.763 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 61 - 500 - text/plain;+charset=utf-8 67.9914ms
+2023-07-16 18:35:15.200 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:35:15.200 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:35:15.201 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 1.1988ms
+2023-07-16 18:35:15.203 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 61
+2023-07-16 18:35:15.203 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:35:15.204 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:35:15.205 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:35:15.207 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:35:15.212 +05:30 [ERR] Failed executing DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:35:15.215 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:35:15.249 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 42.8884ms
+2023-07-16 18:35:15.250 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:35:15.251 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at CitiesManager.WebAPI.Controllers.AccountController.PostLogin(LoginDTO loginDTO) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 115
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:35:15.262 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 61 - 500 - text/plain;+charset=utf-8 59.7090ms
+2023-07-16 18:36:23.131 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/Account/login application/json 68
+2023-07-16 18:36:23.137 +05:30 [INF] CORS policy execution failed.
+2023-07-16 18:36:23.137 +05:30 [INF] Request origin https://localhost:7221 does not have permission to access the resource.
+2023-07-16 18:36:23.138 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:36:23.138 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:36:23.140 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:36:23.146 +05:30 [ERR] Failed executing DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:36:23.148 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CitiesManager.Infrastructure.DatabaseContext.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:36:23.179 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 39.7738ms
+2023-07-16 18:36:23.180 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:36:23.181 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'RefreshTokenExpirationDatatime'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at CitiesManager.WebAPI.Controllers.AccountController.PostLogin(LoginDTO loginDTO) in D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI\Controllers\AccountController.cs:line 115
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d472edf4-a2f2-43ab-8e0c-01c64ad9fc86
+Error Number:207,State:1,Class:16
+2023-07-16 18:36:23.195 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/Account/login application/json 68 - 500 - text/plain;+charset=utf-8 63.5823ms
+2023-07-16 18:37:55.392 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-07-16 18:37:55.435 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-07-16 18:37:55.438 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-07-16 18:37:55.439 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-07-16 18:37:55.448 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-07-16 18:37:55.458 +05:30 [INF] Applying migration '20230716130725_RefreshTokenExpirationColumnAdded'.
+2023-07-16 18:37:55.497 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AspNetUsers] ADD [RefreshTokenExpirationDatatime] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+2023-07-16 18:37:55.499 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230716130725_RefreshTokenExpirationColumnAdded', N'7.0.4');
+2023-07-16 18:39:18.716 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 18:39:19.031 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 18:39:19.033 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 18:39:19.040 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 18:39:19.041 +05:30 [INF] Hosting environment: Development
+2023-07-16 18:39:19.042 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 18:39:21.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 18:39:22.065 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 432.3024ms
+2023-07-16 18:39:22.068 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 18:39:22.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 18:39:22.160 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 20.2952ms
+2023-07-16 18:39:22.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 213.3951ms
+2023-07-16 18:39:22.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 18:39:22.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 416.7542ms
+2023-07-16 18:39:42.879 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:39:42.921 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:39:42.933 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 53.3275ms
+2023-07-16 18:39:42.935 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 61
+2023-07-16 18:39:42.942 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:39:42.994 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:39:43.016 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:39:43.233 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:39:44.126 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:39:44.326 +05:30 [INF] JLogin failed due to incorrect credential
+2023-07-16 18:39:44.335 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-07-16 18:39:44.343 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 1322.2414ms
+2023-07-16 18:39:44.345 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:39:44.357 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 61 - 500 - application/json;+charset=utf-8 1421.2887ms
+2023-07-16 18:39:58.452 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:39:58.453 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:39:58.454 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 2.4270ms
+2023-07-16 18:39:58.456 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:39:58.456 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:39:58.458 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:39:58.459 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:39:58.468 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:39:58.524 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:39:58.657 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:39:58.683 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:39:58.696 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:39:58.710 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 18:39:58.826 +05:30 [INF] JWT token produced successfully
+2023-07-16 18:39:58.828 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:39:58.840 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 379.3463ms
+2023-07-16 18:39:58.840 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:39:58.843 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 387.1812ms
+2023-07-16 18:40:09.672 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:40:09.672 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:40:09.674 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 1.9031ms
+2023-07-16 18:40:09.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:40:09.676 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:40:09.737 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:40:09.740 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:40:09.764 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:40:09.770 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:40:09.779 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 35.934ms
+2023-07-16 18:40:09.780 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:40:09.782 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 106.5480ms
+2023-07-16 18:43:22.776 +05:30 [INF] User profile is available. Using 'C:\Users\sathiyaseelan.ram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-16 18:43:23.169 +05:30 [INF] Now listening on: https://localhost:7221
+2023-07-16 18:43:23.172 +05:30 [INF] Now listening on: http://localhost:5063
+2023-07-16 18:43:23.178 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-16 18:43:23.179 +05:30 [INF] Hosting environment: Development
+2023-07-16 18:43:23.179 +05:30 [INF] Content root path: D:\E drive\Asp Net Core\Identity with Web API\CitiesManager.WebAPI
+2023-07-16 18:43:26.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/index.html - -
+2023-07-16 18:43:27.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/index.html - - - 200 - text/html;charset=utf-8 429.7114ms
+2023-07-16 18:43:27.302 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - -
+2023-07-16 18:43:27.319 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/_vs/browserLink - -
+2023-07-16 18:43:27.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 24.6110ms
+2023-07-16 18:43:27.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.7884ms
+2023-07-16 18:43:27.808 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - -
+2023-07-16 18:43:28.199 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 390.3780ms
+2023-07-16 18:44:41.090 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:44:41.120 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:44:41.122 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 31.7998ms
+2023-07-16 18:44:41.127 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:44:41.131 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:44:41.182 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:44:41.201 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:44:41.351 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:44:42.278 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:44:42.566 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:44:42.595 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:44:42.617 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:44:42.628 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 18:44:42.738 +05:30 [INF] JWT token produced successfully
+2023-07-16 18:44:42.749 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:44:42.884 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 18:44:42.907 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:44:42.922 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 1714.1957ms
+2023-07-16 18:44:42.923 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:44:42.952 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 1823.6368ms
+2023-07-16 18:44:42.957 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:44:42.969 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:44:42.970 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 13.1715ms
+2023-07-16 18:44:42.972 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:44:42.972 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:44:43.022 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:44:43.026 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:44:43.088 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:44:43.104 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:44:43.115 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 87.4337ms
+2023-07-16 18:44:43.116 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:44:43.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 145.5152ms
+2023-07-16 18:46:37.540 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/account/logout - -
+2023-07-16 18:46:37.548 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:46:37.550 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 18:46:37.556 +05:30 [INF] Route matched with {action = "GetLogout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLogout() on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:46:37.564 +05:30 [INF] Reached logout method
+2023-07-16 18:46:37.569 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-07-16 18:46:37.571 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-07-16 18:46:37.573 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-07-16 18:46:37.576 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-07-16 18:46:37.577 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI) in 19.6536ms
+2023-07-16 18:46:37.577 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 18:46:37.579 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/account/logout - - - 204 - - 39.4378ms
+2023-07-16 18:46:51.566 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:46:51.568 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:46:51.569 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 3.2781ms
+2023-07-16 18:46:51.574 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:46:51.576 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:46:51.576 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:46:51.578 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:46:51.595 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:46:51.618 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:46:51.735 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:46:51.738 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:46:51.740 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:46:51.741 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 18:46:51.743 +05:30 [INF] JWT token produced successfully
+2023-07-16 18:46:59.946 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:46:59.962 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 18:47:07.352 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:47:07.354 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 15774.9716ms
+2023-07-16 18:47:07.355 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:47:07.356 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 15781.7634ms
+2023-07-16 18:47:57.336 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:47:57.440 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:47:57.441 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 104.3781ms
+2023-07-16 18:47:57.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:47:57.560 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:47:57.561 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:47:57.562 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:47:57.578 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:47:57.582 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:47:57.584 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 20.2184ms
+2023-07-16 18:47:57.592 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:47:57.593 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 34.6270ms
+2023-07-16 18:48:18.493 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/login - -
+2023-07-16 18:48:18.493 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:48:18.494 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/login - - - 204 - - 1.3049ms
+2023-07-16 18:48:18.495 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/login application/json 59
+2023-07-16 18:48:18.496 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:48:18.496 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:48:18.497 +05:30 [INF] Route matched with {action = "PostLogin", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostLogin(CitiesManager.Core.DTO.LoginDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:48:18.498 +05:30 [INF] Reached PostLogin method
+2023-07-16 18:48:18.503 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:48:18.601 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:48:18.605 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:48:18.607 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:48:18.609 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-16 18:48:18.610 +05:30 [INF] JWT token produced successfully
+2023-07-16 18:48:21.216 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:48:21.220 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 18:48:21.221 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:48:21.222 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI) in 2724.3552ms
+2023-07-16 18:48:21.223 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostLogin (CitiesManager.WebAPI)'
+2023-07-16 18:48:21.224 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/login application/json 59 - 200 - application/json;+charset=utf-8 2728.9817ms
+2023-07-16 18:48:21.237 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:48:21.237 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:48:21.238 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 0.9805ms
+2023-07-16 18:48:21.239 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:48:21.240 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:48:21.241 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:48:21.242 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:48:21.246 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:48:21.250 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:48:21.251 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 7.4608ms
+2023-07-16 18:48:21.252 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:48:21.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 13.7060ms
+2023-07-16 18:48:37.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/account/logout - -
+2023-07-16 18:48:37.387 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:48:37.388 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 18:48:37.389 +05:30 [INF] Route matched with {action = "GetLogout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLogout() on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:48:37.393 +05:30 [INF] Reached logout method
+2023-07-16 18:48:37.394 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-07-16 18:48:37.395 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-07-16 18:48:37.396 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-07-16 18:48:37.397 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-07-16 18:48:37.399 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI) in 6.5722ms
+2023-07-16 18:48:37.399 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.GetLogout (CitiesManager.WebAPI)'
+2023-07-16 18:48:37.401 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/account/logout - - - 204 - - 14.6984ms
+2023-07-16 18:49:17.305 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/register - -
+2023-07-16 18:49:17.308 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:49:17.310 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/register - - - 204 - - 5.2679ms
+2023-07-16 18:49:17.315 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/register application/json 200
+2023-07-16 18:49:17.327 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:49:17.330 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:49:17.334 +05:30 [INF] Route matched with {action = "PostRegister", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostRegister(CitiesManager.Core.DTO.RegisterDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:49:17.353 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-07-16 18:49:17.356 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI) in 21.2331ms
+2023-07-16 18:49:17.357 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:49:17.357 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/register application/json 200 - 400 - application/json;+charset=utf-8 42.9165ms
+2023-07-16 18:49:32.328 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/register - -
+2023-07-16 18:49:32.329 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:49:32.330 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/register - - - 204 - - 2.2029ms
+2023-07-16 18:49:32.332 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/register application/json 197
+2023-07-16 18:49:32.333 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:49:32.333 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:49:32.334 +05:30 [INF] Route matched with {action = "PostRegister", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostRegister(CitiesManager.Core.DTO.RegisterDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:49:32.337 +05:30 [INF] Reached PostRegister action
+2023-07-16 18:49:32.428 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:49:32.460 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PersonName], [PhoneNumber], [PhoneNumberConfirmed], [RefreshToken], [RefreshTokenExpirationDatatime], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2023-07-16 18:49:32.465 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:49:32.467 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:49:32.469 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:49:32.470 +05:30 [INF] JWT Token created successfully
+2023-07-16 18:49:32.472 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:49:32.476 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 18:49:32.478 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:49:32.479 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI) in 143.806ms
+2023-07-16 18:49:32.480 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:49:32.480 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/register application/json 197 - 200 - application/json;+charset=utf-8 148.5966ms
+2023-07-16 18:49:32.488 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:49:32.488 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:49:32.491 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 3.2444ms
+2023-07-16 18:49:32.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:49:32.494 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:49:32.495 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:49:32.497 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:49:32.499 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:49:32.501 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:49:32.501 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 3.6408ms
+2023-07-16 18:49:32.502 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:49:32.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 9.4637ms
+2023-07-16 18:50:01.384 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:50:01.392 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:50:01.393 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 9.1966ms
+2023-07-16 18:50:01.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:50:01.397 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:50:01.398 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:50:01.399 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:50:01.406 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:50:01.408 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:50:01.409 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 8.4809ms
+2023-07-16 18:50:01.411 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:50:01.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 15.6852ms
+2023-07-16 18:50:43.695 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/account/register - -
+2023-07-16 18:50:43.697 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:50:43.698 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/account/register - - - 204 - - 2.8226ms
+2023-07-16 18:50:43.701 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7221/api/account/register application/json 194
+2023-07-16 18:50:43.710 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:50:43.711 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:50:43.711 +05:30 [INF] Route matched with {action = "PostRegister", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CitiesManager.Core.Identity.ApplicationUser]] PostRegister(CitiesManager.Core.DTO.RegisterDTO) on controller CitiesManager.WebAPI.Controllers.AccountController (CitiesManager.WebAPI).
+2023-07-16 18:50:43.713 +05:30 [INF] Reached PostRegister action
+2023-07-16 18:50:43.816 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:50:43.821 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PersonName], [PhoneNumber], [PhoneNumberConfirmed], [RefreshToken], [RefreshTokenExpirationDatatime], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2023-07-16 18:50:43.824 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-07-16 18:50:43.826 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-16 18:50:43.828 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-07-16 18:50:43.829 +05:30 [INF] JWT Token created successfully
+2023-07-16 18:50:43.830 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpirationDatatime], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-16 18:50:43.833 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenExpirationDatatime] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2023-07-16 18:50:43.836 +05:30 [INF] Executing OkObjectResult, writing value of type 'CitiesManager.Core.DTO.AuthenticationResponse'.
+2023-07-16 18:50:43.837 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI) in 124.5881ms
+2023-07-16 18:50:43.841 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.AccountController.PostRegister (CitiesManager.WebAPI)'
+2023-07-16 18:50:43.842 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7221/api/account/register application/json 194 - 200 - application/json;+charset=utf-8 141.1218ms
+2023-07-16 18:50:43.852 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7221/api/Cities - -
+2023-07-16 18:50:43.853 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:50:43.853 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7221/api/Cities - - - 204 - - 1.6682ms
+2023-07-16 18:50:43.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7221/api/Cities - -
+2023-07-16 18:50:43.859 +05:30 [INF] CORS policy execution successful.
+2023-07-16 18:50:43.860 +05:30 [INF] Executing endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:50:43.861 +05:30 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CitiesManager.Core.Models.City]]] GetCities() on controller CitiesManager.WebAPI.Controllers.v1.CitiesController (CitiesManager.WebAPI).
+2023-07-16 18:50:43.864 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CityID], [c].[CityName]
+FROM [Cities] AS [c]
+ORDER BY [c].[CityName]
+2023-07-16 18:50:43.865 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CitiesManager.Core.Models.City, CitiesManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-16 18:50:43.865 +05:30 [INF] Executed action CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI) in 4.0037ms
+2023-07-16 18:50:43.866 +05:30 [INF] Executed endpoint 'CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities (CitiesManager.WebAPI)'
+2023-07-16 18:50:43.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7221/api/Cities - - - 200 - application/json;+charset=utf-8 8.1584ms
